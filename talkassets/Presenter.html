@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Backbone.js "scalability in complexity"</title>
+<title>Markdown Presenter</title>
 <style>
   html, body {
   	margin:0;
@@ -39,7 +39,7 @@
  /* End styling */
 </style>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script type="text/javascript" src="./talkassets/showdown.js"></script>
+<script type="text/javascript" src="showdown.js"></script>
 </head>
 <body>
 
@@ -80,7 +80,7 @@ Present.prevSlide = function() {
 };
 
 $.ajax({
-  url: './talkassets/presentation.md',
+  url: 'presentation.md',
   success: function(data) {
     if (data.length>0) {
       var converted = Present.converter.makeHtml(data);
