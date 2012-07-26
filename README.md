@@ -1,7 +1,7 @@
 "Scaling in Complexity"
 ===
 
-Development methodology using Backbone.JS, driven by BDD using Jasmine and some CoffeeScript to keep everyone awake..
+Review of development methodology using Backbone.JS, driven by BDD using Jasmine and some CoffeeScript to keep everyone awake.. oh and using HTML5- Local Storage instead of a real backend.
 
 ### Presentation
 
