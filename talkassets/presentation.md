@@ -42,4 +42,4 @@ Requirements:
 
 * as a user, I want to be able to create a task
 * as a user, I want to be able to delete a task
-* as a user, I want my tasks to be persistent of browser restarts
+* as a user, I want to be able to open a task I created in another tab
