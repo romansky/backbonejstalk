@@ -16,7 +16,7 @@ http://romansky.github.com/backbonejstalk/talk.html
 
 ### Code
 
-Final source code cab be found in this repository under code/final.
+Final source code can be found in this repository under code/final.
 If you want the barebones checkout "starter" folder.
 
 To see the tests run, just open "todos.html"
