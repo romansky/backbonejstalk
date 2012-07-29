@@ -132,7 +132,8 @@ ns.view.TaskListItemView = class TaskListItemView extends Backbone.View
 	_removeThySelf : ()=>
 		@$el.remove()
 
-	_deleteListItem : ()=>
+	_deleteListItem : (e)=>
+		e.preventDefault()
 		@model.destroy()
 
 ns.view.TasksForm = class TasksForm extends Backbone.View
@@ -152,7 +153,8 @@ ns.view.TasksForm = class TasksForm extends Backbone.View
 		@$el.append( ns.templates.tasksForm() )
 		@containerEl.append(@el)
 
-	_addTaskPressed : ()=>
+	_addTaskPressed : (e)=>
+		e.preventDefault()
 		@collection.add({name: @$("input.task-text").val()})
 
 
