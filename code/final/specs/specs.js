@@ -20,7 +20,7 @@ describe("Backbone.sync specs", function(){
 		expect(localStorage[m.url()]).toEqual(JSON.stringify(m.toJSON()));
 	});
 
-	it("needs to set the model's ID attribute", function(){
+	it("needs to set the model's ID attribute on create", function(){
 		var m = getModel();
 		m.save();
 		expect(m.id).toBeDefined();
