@@ -1,7 +1,6 @@
 Backbone.sync = (method, model, options) ->
 
-	storageKey = if options.url? then options.url
-	else ( if typeof model.url is "function" then model.url() else model.url )
+	storageKey = if typeof model.url is "function" then model.url() else model.url
 
 	if model.isNew()
 		model.set({"id": parseInt(Math.random()*10000)},{silent: true})
