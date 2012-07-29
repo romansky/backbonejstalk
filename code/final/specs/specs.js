@@ -14,16 +14,16 @@ describe("Backbone.sync specs", function(){
 		return new (Backbone.Model.extend(modelBaseObject))();
 	};
 
-	it("needs to set the model's ID attribute", function(){
-		var m = getModel();
-		m.save();
-		expect(m.id).toBeDefined();
-	});
-
 	it("needs to save its state to local storage", function(){
 		var m = getModel();
 		m.save();
 		expect(localStorage[m.url()]).toEqual(JSON.stringify(m.toJSON()));
+	});
+
+	it("needs to set the model's ID attribute", function(){
+		var m = getModel();
+		m.save();
+		expect(m.id).toBeDefined();
 	});
 
 	it("needs to be able to update local storage", function(){
