@@ -11,7 +11,7 @@ http://romansky.github.com/backbonejstalk/talk.html
 ### Links
 
 * [Backbone JS](http://documentcloud.github.com/backbone/)
-* [Jasmine](http://pivotal.github.com/jasmine/)
+* [Jasmine](https://jasmine.github.io/)
 * [CoffeeScript](http://coffeescript.org/)
 
 ### Code
